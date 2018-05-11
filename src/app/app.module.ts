@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {HttpModule} from "@angular/http";
 
-//servives
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
+
+
+//services
 
 import {InfoService} from './services/info.service';
 import {PortfolioService} from './services/portfolio.service';
+import { MessageService } from './services/message.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -27,15 +33,20 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     FooterComponent,
 
+
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
 
   InfoService,
-  PortfolioService
+  PortfolioService,
+  MessageService
 
   ],
   bootstrap: [AppComponent]

@@ -1340,7 +1340,7 @@
 			animation: none !important;
 		}
 
-	input, textarea, select {
+	input, button, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 18pt;
 		line-height: 1.75em;

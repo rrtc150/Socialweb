@@ -5,21 +5,21 @@
 					<h2>Send us a message</h2>
 					<p>It does not matter if you do not want any website, send us an email and tell us what do you think about Social Web and how we can get better. <br>Your opinion is important for us to grow up. See you!</p>
 				</header>
-				<form id="contact-form" method="post" action="#">
+				<form (ngSubmit)='contactForm(form.value)' #form='ngForm'>
 					<div class="row 50%">
 						<div class="6u 12u$(mobile)">
-							<input id="inputName" type="text" class="text" name="name" placeholder="Name" />
+							<input type="text" class="text" name="name" placeholder="Name" ngModel/>
 						</div>
 						<div class="6u$ 12u$(mobile)">
-							<input id="inputEmail" type="email" class="text" name="email" placeholder="Email" />
+							<input id="inputEmail" type="email" class="text" name="email" placeholder="Email" ngModel/>
 						</div>
 						<div class="12u$">
-							<textarea id="inputMessage" name="message" placeholder="Message"></textarea>
+							<textarea id="inputMessage" name="message" placeholder="Message" ngModel></textarea>
 						</div>
 						<div class="12u$">
 							<ul class="actions">
 								<li>
-									<input type="submit" value="Send" />
+									<button type="submit">Send</button>
 								</li>
 							</ul>
 						</div>
