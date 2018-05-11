@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {InfoService} from "../../services/info.service";
 import {MessageService} from "../../services/message.service";
+import * as swal from 'sweetalert';
 
 @Component({
   selector: 'app-contact',
@@ -13,5 +14,11 @@ export class ContactComponent{
 				public _MessageService: MessageService){
 
 	}
+
+	contactForm(form) {
+ 		this._MessageService.sendMessage(form).subscribe(() => {
+ 			swal('Contact form', 'Message sent', 'success');
+ 		});
+ 	}
 
 }
