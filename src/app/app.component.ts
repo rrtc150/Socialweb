@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {InfoService} from "./services/info.service";
 import {PortfolioService} from "./services/portfolio.service";
-import { MessageService } from './services/message.service';
+import { MessageService } from "./services/message.service";
 import * as swal from 'sweetalert';
 
 @Component({

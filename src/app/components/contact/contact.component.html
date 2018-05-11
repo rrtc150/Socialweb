@@ -5,7 +5,7 @@
 					<h2>Send us a message</h2>
 					<p>It does not matter if you do not want any website, send us an email and tell us what do you think about Social Web and how we can get better. <br>Your opinion is important for us to grow up. See you!</p>
 				</header>
-				<form (ngSubmit)='contactForm(form.value)' #form='ngForm'>
+				<form (ngSubmit)="contactForm(form.value)" #form="ngForm">
 					<div class="row 50%">
 						<div class="6u 12u$(mobile)">
 							<input type="text" class="text" name="name" placeholder="Name" ngModel/>
